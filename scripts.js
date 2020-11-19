@@ -39,11 +39,11 @@ window.addEventListener("load",function(){
     
 
     takeoff.addEventListener("click",function(){
-        letconfirmation = window,confirm("Shuttle is ready");
+        let confirmation = window.confirm("Shuttle is ready");
         if (confirmation){
             flightStatus.innerHTML = "Shuttle in Flight" ;
             shuttleHeight.innerHTML = "10000";
-            shuttleBackgroung.style.backgroundcolor = "blue";
+            shuttleBackground.style.backgroundColor = "blue";
 
         }
     });
@@ -51,12 +51,12 @@ window.addEventListener("load",function(){
     
     land.addEventListener("click",function(){
          window.alert("The Shuttle is landing. landing gear engaged");
-        if (confirmation){
+        
             flightStatus.innerHTML = "The Shuttle has landed" ;
             shuttleHeight.innerHTML = "0";
-            shuttleBackgroung.style.backgroundcolor = "green";
+            shuttleBackground.style.backgroundColor = "green";
         rocketImg.style.bottom = "0px";
-    }
+    
 });
         let abort = this.document.getElementById("missionAbort");
     
