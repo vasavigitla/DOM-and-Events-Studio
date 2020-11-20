@@ -61,11 +61,11 @@ window.addEventListener("load",function(){
         let abort = this.document.getElementById("missionAbort");
     
     abort.addEventListener("click",function(){
-        letconfirmation = window.confirm("Confirm that you want to abort the mission ");
+        let confirmation = window.confirm("Confirm that you want to abort the mission ");
         if (confirmation){
             flightStatus.innerHTML = "Mission Aborted" ;
             shuttleHeight.innerHTML = "0";
-            shuttleBackgroung.style.backgroundcolor = "green";
+            shuttleBackground.style.backgroundColor = "green";
             rocketImg.style.bottom = "0px";
             rocketImg.style.left 
         }
